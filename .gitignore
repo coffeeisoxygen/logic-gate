@@ -8,3 +8,7 @@ wheels/
 
 # Virtual environments
 .venv
+
+# GitHub and VSCode directories
+.github/
+.vscode/

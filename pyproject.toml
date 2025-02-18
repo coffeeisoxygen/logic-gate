@@ -6,4 +6,31 @@ readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "pytest>=8.3.4",
+    "ruff>=0.3.0",
 ]
+
+[tool.ruff]
+# Same target python version as your project
+target-version = "py313"
+
+# Enable rules
+select = [
+    "E",  # pycodestyle errors
+    "W",  # pycodestyle warnings
+    "F",  # pyflakes
+    "I",  # isort
+    "B",  # flake8-bugbear
+]
+
+# Ignore specific rules
+ignore = []
+
+# Line length
+line-length = 88
+
+# Automatically fix some issues
+fix = true
+
+# Sort imports
+[tool.ruff.isort]
+force-single-line = true
